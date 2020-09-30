@@ -119,12 +119,6 @@ const displayProjectNotes = (value) => {
   })
 }
 
-addNote('My Shopping List', 'need to go to that market', [{name: "way protein", checked: true}, 
-{name: "paper towels", checked: false}, {name: "after shave", checked: true}, {name: "bread", checked: false}], 
-'tomorrow', 'Buy')
-
-addNote('Dinner Planning', 'Planning, preparing, and portioning your meals ahead of time is one of the most effective tools for keeping your food budget in check', 
-[], '12/02/2020', 'dinner')
 
 
 // DOM related stuff
@@ -510,6 +504,13 @@ const changeBackgroundImg = (img) => {
     body.style.backgroundSize = 'cover'
 }
 
+addNote('My Shopping List', 'need to go to that market', [{name: "way protein", checked: true}, 
+{name: "paper towels", checked: false}, {name: "after shave", checked: true}, {name: "bread", checked: false}], 
+'14/05/2020', 'Buy')
+
+addNote('Dinner Planning', 'Planning, preparing, and portioning your meals ahead of time is one of the most effective tools for keeping your food budget in check', 
+[], '12/02/2020', 'dinner')
+
 imagesEventListeners()
 listInputEvent()
 addInputEvent()
@@ -546,5 +547,6 @@ renderAll()
 
 // check item option (x)
 
-// add list item option ()
+// adding list item option (x)
+
 

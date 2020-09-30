@@ -43,7 +43,7 @@ label{
   align-self: center;
 }
 
-#projects {
+.option {
   font-size: inherit;
   padding: 3px;
   border-radius: 9px;
@@ -98,6 +98,11 @@ input{
   text-align: initial;
 }
 
+#title-input{
+  font-size: larger;
+  font-weight: 600;
+}
+
 .input-field{
   outline: none;
   border: none;
@@ -126,7 +131,7 @@ input{
 }
 
 .delete-button:hover{
-  /* cursor: pointer; */
+  cursor: pointer;
   background-color: antiquewhite;
 }
 
@@ -377,6 +382,13 @@ li{
   flex-direction: row;
   margin-top: 21px;
   flex-wrap: wrap;
+  background: #E7C6ED;
+  padding: 10px;
+  border-radius: 10px;
+  width: fit-content;
+  flex-shrink: 0;
+  margin: 9px auto;
+  align-content: normal;
 }
 
 img{
@@ -400,7 +412,9 @@ img:hover{transform: scale(1.1);}
   flex-direction: column;
   gap: 10px;
   animation: fadeInFromNone 1.7s ease-in;
-  width: 246px;
+  min-width: 204px;
+  width: 209px;
+  /* display: none; */
 }
 
 .expand{
@@ -428,3 +442,25 @@ img:hover{transform: scale(1.1);}
     opacity: 1;
   }
 }
+
+@media (max-width: 574px){
+  .input-form{
+    width: 250px;
+  }
+  #form-bottom-input{
+    flex-direction: column;
+  }
+  #due-date-input, #project-input, #add-button{
+    width: 158px;
+    text-align: inherit;
+  }
+  #add-button{
+    text-align: center;
+  }
+  .delete-button, .delete-checklist-button{
+    display: initial;
+  }
+  #images-ul{
+    width: 181px;
+  }
+} 
