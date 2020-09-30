@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="style.css">
+  <title>MyNote</title>
+</head>
+<body>
+  <div class="main">
+    <div class="side-bar">
+      <div class="side-bar-option">
+        <label for="projects">Projects</label>
+        <select name="projects" id="projects">
+          <option value="All">All</option>
+          <option value="dinnner">dinner</option>
+          <option value="Buy">Buy</option>
+        </select>
+      </div>
+      <div class="side-bar-option">
+        <label for="date">Due:</label>
+        <select name="projects" id="projects">
+        <option value="All">All</option>         
+        </select>
+      </div>
+      <div class="background-images-div">
+        <ul id='images-ul'>
+          <li><img id="0" class="img" src="./img/img0.jpg" alt=""></li>
+          <li><img id="1" class="img" src="./img/img1.jpg" alt=""></li>
+          <li><img id="2" class="img" src="./img/img2.jpg" alt=""></li>
+          <li><img id="3" class="img" src="./img/img3.jpg" alt=""></li>
+          <li><img id="4" class="img" src="./img/img4.jpg" alt=""></li>
+          <li><img id="5" class="img" src="./img/img5.jpg" alt=""></li>
+          <li><img id="6" class="img" src="./img/img6.jpg" alt=""></li>
+          <li><img id="7" class="img" src="./img/img7.jpg" alt=""></li>
+          <li><img id="8" class="img" src="./img/img8.jpg" alt=""></li>
+        </ul>
+      </div>
+    </div>
+    <div class="content">
+      
+      <div class="input-form">
+        <input type="text" class="hide input-field" id='title-input' value="" placeholder="Title">
+        <textarea type="text" class="input-field" id='note-input' value="" placeholder="take a note..."></textarea>
+        <div id="checklist-div">
+          <input type="text" class="hide input-field" id='checklist-input' value="" placeholder="for list: write, then press enter">
+        </div>
+        <div id="form-bottom-input">
+          <input type="date" class="hide input-field" id='due-date-input'>
+          <input type="text" class="hide input-field" id='project-input' value="" placeholder="project">
+          <button id="add-button" class="hide">Close</button>
+        </div>
+      </div>
+      <div class="notes-container">
+      </div>
+    </div>
+    
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
+
