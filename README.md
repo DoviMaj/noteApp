@@ -2,4 +2,6 @@
 
 made for TheOdinProject
 
-live here [noteApp](https://dovimaj.github.io/noteApp/)
+live - [noteApp](https://dovimaj.github.io/noteApp/)
+
+![](gif.gif)
