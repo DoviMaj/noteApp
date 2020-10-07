@@ -1,4 +1,4 @@
-# note taking app project
+# Note App
 
 made for TheOdinProject
 
