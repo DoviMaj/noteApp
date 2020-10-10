@@ -1,3 +1,8 @@
+import {notes} from './index'
+import {createChecklist} from './checklist'
+import {removeNoteElement, updateElement, updateElementChecklist} from './DOM_manipulation'
+import {removeNoteData, updateData, addChecklistItemData} from './data_manipulation'
+
 // display all notes on DOM
 export function renderAllNotes() {
   let div = document.querySelector('.notes-container')
