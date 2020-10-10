@@ -1,5 +1,9 @@
+import {updateChecklistArray, addNote} from './data_manipulation'
+import {updateElement} from './DOM_manipulation'
+import {listItemData} from './data_manipulation'
+
 // adds list items on input form
-const addListItem = (element) => {
+export const addListItem = (element) => {
     let li = document.createElement('li');
     li.innerText = element.value
     li.className = 'temporary-form-list-item'
@@ -46,11 +50,10 @@ const getInput = () => {
   addNote(title.value, note.value, listItemData, dueDate.value, project.value);
 
   list.forEach(item => item.remove())
-  listItemData = []
   title.value = ''
   note.value = ''
   dueDate.value = ''
-  listItemData.value = ''
+  listItemData.length = 0
   project.value = ''
 }
 
@@ -99,3 +102,5 @@ export const addButtonEvent = () => {
       hideInputOptions()
     })
   }
+
+  

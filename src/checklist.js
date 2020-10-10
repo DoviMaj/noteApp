@@ -1,3 +1,6 @@
+import {updateChecklistData, updateCheckedItem, removeChecklistItemData} from './data_manipulation'
+import {updateElement, removeChecklistItemElement} from './DOM_manipulation'
+
 export function createChecklist(item, index, noteWrapper) {
     let listBullet;
     let listChangeInput;
