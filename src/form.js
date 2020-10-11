@@ -1,6 +1,6 @@
 import {updateChecklistArray, addNote} from './data_manipulation'
 import {updateElement} from './DOM_manipulation'
-import {listItemData} from './data_manipulation'
+import {listItemData, resetListItemData} from './data_manipulation'
 
 // adds list items on input form
 export const addListItem = (element) => {
@@ -48,12 +48,11 @@ const getInput = () => {
   let project = document.querySelector('#project-input')
 
   addNote(title.value, note.value, listItemData, dueDate.value, project.value);
-
   list.forEach(item => item.remove())
   title.value = ''
   note.value = ''
   dueDate.value = ''
-  listItemData.length = 0
+  resetListItemData()
   project.value = ''
 }
 

@@ -61,3 +61,7 @@ export const addChecklistItemData = (element, parentIndex) => {
 export function updateChecklistArray(element, newValue){
   listItemData[element.previousElementSibling.id].name = newValue.value
 }
+
+export const resetListItemData = () => {
+  listItemData = []
+}
