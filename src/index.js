@@ -5,11 +5,10 @@ import {renderAllNotes} from './render_DOM'
 import {listInputEvent} from './DOM_manipulation'
 import {addNote} from './data_manipulation'
 
-// notes data
-let notes = [];
 
-// current input list 
-let listItemData = []
+// notes data
+export let notes = [];
+
 
 addNote('My Shopping List', 'need to go to that market', [{name: "way protein", checked: true}, 
 {name: "paper towels", checked: false}, {name: "after shave", checked: true}, {name: "bread", checked: false}], 

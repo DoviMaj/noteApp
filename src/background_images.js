@@ -11,6 +11,6 @@ export const imagesEventListeners = () => {
 // changeBackgroundImg
 const changeBackgroundImg = (img) => {
   let body = document.querySelector('body')
-    body.style.background =  `url(../src/img/img${img.id}.jpg) no-repeat fixed`
+    body.style.background =  `url(./img/img${img.id}.jpg) no-repeat fixed`
     body.style.backgroundSize = 'cover'
 }
