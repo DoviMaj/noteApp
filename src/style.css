@@ -2,10 +2,10 @@
   --section-color: rgb(255, 255, 255, 0.9);
 }
 
-body{
+body {
   background: url(../dist/914923cf9a48a39d2b139e1080dcd148.jpg) no-repeat fixed;
   background-size: cover;
-  font-family: 'Montserrat', 'sans-serif';
+  font-family: "Montserrat", "sans-serif";
   margin: 0;
   min-height: 100%;
 }
@@ -14,19 +14,18 @@ html {
   height: 100%;
 }
 
-.main{
+.main {
   display: flex;
   height: 100vh;
 }
 
-.content{
+.content {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
 
-
-.side-bar-option{
+.side-bar-option {
   background: linear-gradient(45deg, #e7c6ed, transparent);
   padding: 11px;
   border-radius: 3px;
@@ -39,7 +38,7 @@ select#projects:focus {
   outline: none;
 }
 
-label{
+label {
   align-self: center;
 }
 
@@ -51,8 +50,7 @@ label{
   border: none;
 }
 
-
-.input-form{
+.input-form {
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -63,15 +61,16 @@ label{
   background-color: var(--section-color);
   padding: 10px;
   margin-top: 20px;
-  box-shadow: 0px 0px 7px 0px rgba(60,64,67,0.302), 0 1px 1px 1px rgba(60,64,67,0.149);
+  box-shadow: 0px 0px 7px 0px rgba(60, 64, 67, 0.302),
+    0 1px 1px 1px rgba(60, 64, 67, 0.149);
   height: fit-content;
 }
 
-input{
-  font-family: 'Montserrat', 'sans-serif';
+input {
+  font-family: "Montserrat", "sans-serif";
 }
 
-::spelling-error{
+::spelling-error {
   text-decoration: none;
 }
 
@@ -87,23 +86,23 @@ input{
   border: transparent;
   border-radius: 10px;
 }
- 
+
 ::-webkit-scrollbar-thumb {
   background-color: currentcolor;
   border-radius: 10px;
 }
 
-.temporary-form-list-item{
+.temporary-form-list-item {
   margin-left: 20px;
   text-align: initial;
 }
 
-#title-input{
+#title-input {
   font-size: larger;
   font-weight: 600;
 }
 
-.input-field{
+.input-field {
   outline: none;
   border: none;
   padding: 8px;
@@ -113,8 +112,7 @@ input{
   background-color: initial;
 }
 
-
-.delete-button{
+.delete-button {
   border: none;
   border-radius: 18px;
   outline: none;
@@ -130,12 +128,12 @@ input{
   left: 204px;
 }
 
-.delete-button:hover{
+.delete-button:hover {
   cursor: pointer;
   background-color: antiquewhite;
 }
 
-#note-input{
+#note-input {
   margin: 0px;
   resize: none;
   padding: 15px 15px 5px 10px;
@@ -146,7 +144,7 @@ input{
   white-space: pre-line;
 }
 
-.note-input{
+.note-input {
   resize: none;
   width: -webkit-fill-available;
   min-height: 100px;
@@ -156,44 +154,44 @@ input{
   overflow: auto;
 }
 
-::placeholder{
-  font-family: 'Montserrat', 'sans-serif';
+::placeholder {
+  font-family: "Montserrat", "sans-serif";
 }
 
-.note-title{
+.note-title {
   margin: 5px 0px 20px 0px;
   font-size: larger;
 }
 
-p{
+p {
   white-space: pre-line;
   margin-top: 20px;
   margin-bottom: 0px;
 }
 
-.note-text{
+.note-text {
   white-space: pre-wrap;
   margin: 3px 0px 10px 0px;
   word-wrap: break-word;
 }
 
-#checklist-div{
+#checklist-div {
   text-align: left;
 }
 
-.checkbox{
+.checkbox {
   position: relative;
   top: 2px;
 }
 
-.list-item-text{
+.list-item-text {
   word-break: break-word;
   white-space: pre-wrap;
   text-align: initial;
   width: 148px;
 }
 
-.checked{
+.checked {
   text-decoration: line-through;
   font-style: italic;
   color: dimgray;
@@ -221,22 +219,22 @@ input[type="checkbox"]:checked {
 }
 
 input.change-input {
-    width: 156px;
-    word-break: break-word;
-    white-space: pre-wrap;
+  width: 156px;
+  word-break: break-word;
+  white-space: pre-wrap;
 }
 
-li{
+li {
   list-style: none;
   padding: 3px;
   text-align: center;
 }
 
-#checklist-input{
+#checklist-input {
   width: -webkit-fill-available;
 }
 
-#add-button{
+#add-button {
   padding: 10px 20px 10px 20px;
   margin: auto;
   appearance: none;
@@ -248,29 +246,29 @@ li{
   font-family: inherit;
 }
 
-#add-button:hover{
+#add-button:hover {
   background-color: antiquewhite;
   border-radius: 3px;
   cursor: pointer;
   /* padding: 11px; */
 }
 
-#form-bottom-input{
+#form-bottom-input {
   display: flex;
   justify-content: center;
   background-color: initial;
   margin-top: 5px;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
-#project-input{
+#project-input {
   text-align: center;
 }
 
-.notes-container{
+.notes-container {
   display: flex;
   flex-flow: row;
   align-items: flex-start;
@@ -280,24 +278,25 @@ li{
   justify-content: center;
 }
 
-.note-wrapper{
-    max-width: 190px;
-    max-height: 650px;
-    border-radius: 5px;
-    padding-top: 0px;
-    margin-top: 0;
-    background-color: var(--section-color);
-    padding: 16px;
-    min-width: 75px;
-    min-height: 85px;
-    width: -webkit-fill-available;
-    flex-direction: column;
-    display: flex;
-    position: relative;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302), 0 1px 3px 1px rgba(60,64,67,0.149);
+.note-wrapper {
+  max-width: 190px;
+  max-height: 650px;
+  border-radius: 5px;
+  padding-top: 0px;
+  margin-top: 0;
+  background-color: var(--section-color);
+  padding: 16px;
+  min-width: 75px;
+  min-height: 85px;
+  width: -webkit-fill-available;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+    0 1px 3px 1px rgba(60, 64, 67, 0.149);
 }
 
-.change-input{
+.change-input {
   background-color: transparent;
   border: none;
   outline: none;
@@ -307,7 +306,7 @@ li{
   width: 188px;
 }
 
-.title-edit{
+.title-edit {
   max-width: -webkit-fill-available;
   font-size: larger;
   margin-block-start: 0.83em;
@@ -320,8 +319,8 @@ li{
   margin: 5px 0px 20px 0px;
 }
 
-.project{
-  background: #E7C6ED;
+.project {
+  background: #e7c6ed;
   padding: 6px;
   border-radius: 10px;
   text-align: center;
@@ -330,8 +329,7 @@ li{
   font-size: small;
 }
 
-
-.due-date-div{
+.due-date-div {
   display: flex;
   gap: 10px;
   /* background: antiquewhite; */
@@ -345,7 +343,7 @@ li{
   align-self: baseline;
 }
 
-.list-item{
+.list-item {
   display: flex;
   position: relative;
   left: -42px;
@@ -353,7 +351,7 @@ li{
   width: 200px;
 }
 
-.delete-checklist-button{
+.delete-checklist-button {
   position: absolute;
   left: 163px;
   border: none;
@@ -368,13 +366,13 @@ li{
   padding: 0;
 }
 
-.delete-checklist-button:hover{
+.delete-checklist-button:hover {
   cursor: pointer;
   background-color: antiquewhite;
   display: block;
 }
 
-#images-ul{
+#images-ul {
   display: flex;
   margin: 0;
   padding: 0;
@@ -382,7 +380,7 @@ li{
   flex-direction: row;
   margin-top: 21px;
   flex-wrap: wrap;
-  background: #E7C6ED;
+  background: #e7c6ed;
   padding: 10px;
   border-radius: 10px;
   width: fit-content;
@@ -391,20 +389,21 @@ li{
   align-content: normal;
 }
 
-img{
+img {
   cursor: pointer;
 }
 
-
-.img{
+.img {
   width: 53px;
   height: 38px;
   border-radius: 5px;
 }
 
-img:hover{transform: scale(1.1);} 
+img:hover {
+  transform: scale(1.1);
+}
 
-.side-bar{
+.side-bar {
   background: var(--section-color);
   padding: 10px;
   margin: 0;
@@ -417,7 +416,7 @@ img:hover{transform: scale(1.1);}
   /* display: none; */
 }
 
-.expand{
+.expand {
   position: absolute;
   min-height: 526px;
   min-width: 500px;
@@ -443,24 +442,27 @@ img:hover{transform: scale(1.1);}
   }
 }
 
-@media (max-width: 574px){
-  .input-form{
+@media (max-width: 574px) {
+  .input-form {
     width: 250px;
   }
-  #form-bottom-input{
+  #form-bottom-input {
     flex-direction: column;
   }
-  #due-date-input, #project-input, #add-button{
+  #due-date-input,
+  #project-input,
+  #add-button {
     width: 158px;
     text-align: inherit;
   }
-  #add-button{
+  #add-button {
     text-align: center;
   }
-  .delete-button, .delete-checklist-button{
+  .delete-button,
+  .delete-checklist-button {
     display: initial;
   }
-  #images-ul{
+  #images-ul {
     width: 181px;
   }
-} 
+}
