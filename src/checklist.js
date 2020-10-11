@@ -6,10 +6,10 @@ import {
 } from "./data_manipulation";
 import { updateElement, removeChecklistItemElement } from "./DOM_manipulation";
 
-export  function createChecklist(item, index, noteWrapper) {
-  const listBullet;
+export function createChecklist(item, index, noteWrapper) {
+  let listBullet = "";
   let listChangeInput;
-  const checkbox;
+  let checkbox = "";
   let deleteListItemButton;
   listBullet = document.createElement("li");
   listBullet.innerText = item.name;
@@ -53,7 +53,6 @@ export  function createChecklist(item, index, noteWrapper) {
   checkbox.className = "checkbox";
   checkbox.id = index;
   checkbox.type = "checkbox";
-  checkbox.checked;
   if (item.checked === true) {
     checkbox.checked = true;
     listBullet.classList.add("checked");
