@@ -7,9 +7,17 @@ import {addListItem} from './form'
 export const updateElementChecklist = (item, index, noteWrapper) => {
   let parent = document.querySelector(`#ul${noteWrapper.id}`)
   if(parent){
-    parent.remove()
+    parent.innerHTML = ''
+    item.checklist.forEach((item, index) => {
+      let listItemDiv = document.createElement('div')
+      listItemDiv.className = 'list-item'
+      listItemDiv.id = index 
+      const element = createChecklist(item, index, noteWrapper)
+      listItemDiv.append(element.checkbox, element.listBullet, element.listChangeInput, element.deleteListItemButton)
+      parent.append(listItemDiv) 
+  })
   }
-  if(item.checklist.length !== 0){
+  else {
     const list = document.createElement('ul')
     list.id = `ul${index}`
     item.checklist.forEach((item, index) => {
@@ -18,7 +26,7 @@ export const updateElementChecklist = (item, index, noteWrapper) => {
       listItemDiv.id = index 
       const element = createChecklist(item, index, noteWrapper)
       listItemDiv.append(element.checkbox, element.listBullet, element.listChangeInput, element.deleteListItemButton)
-      list.append(listItemDiv)
+      list.append(listItemDiv)   
   })
     document.querySelector(`.note${index}`).append(list)
   }
