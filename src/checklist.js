@@ -29,7 +29,7 @@ export function createChecklist(item, index, noteWrapper) {
   listChangeInput = document.createElement("input");
   listChangeInput.value = item.name;
   listChangeInput.spellcheck = false;
-  listChangeInput.className = "change-input";
+  listChangeInput.className = "change-input"; 
   listChangeInput.classList.add("hide");
   listChangeInput.id = index;
   listChangeInput.addEventListener("keypress", (evt) => {

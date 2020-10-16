@@ -3,7 +3,7 @@
 }
 
 body {
-  background: url(../dist/img/img5.jpg) no-repeat fixed;
+  background: url(./img/img5.jpg) no-repeat fixed;
   background-size: cover;
   font-family: "Montserrat", "sans-serif";
   margin: 0;

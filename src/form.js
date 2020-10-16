@@ -1,46 +1,4 @@
-import {
-  updateChecklistArray,
-  addNote,
-  listItemData,
-  resetListItemData,
-} from "./data_manipulation";
-import { updateElement } from "./DOM_manipulation";
-
-// adds list items on input form
-export const addListItem = (element) => {
-  const li = document.createElement("li");
-  li.innerText = element.value;
-  li.className = "temporary-form-list-item";
-  li.id = listItemData.length;
-  const changeList = document.createElement("input");
-  changeList.className = "hide";
-  changeList.classList.add("change-input");
-  changeList.type = "text";
-  changeList.value = element.value;
-  li.addEventListener("click", () => {
-    li.classList.add("hide");
-    changeList.classList.remove("hide");
-    changeList.focus();
-  });
-  changeList.addEventListener("keydown", (event) => {
-    if (event.key === "Enter" && event.target.value !== "") {
-      updateChecklistArray(event.target, changeList);
-      updateElement(event.target);
-      changeList.classList.add("hide");
-      li.classList.remove("hide");
-    }
-  });
-  changeList.addEventListener("blur", (event) => {
-    if (event.target.value !== "") {
-      updateChecklistArray(event.target, changeList);
-      updateElement(event.target);
-      changeList.classList.add("hide");
-      li.classList.remove("hide");
-    }
-  });
-  const input = document.querySelector("#checklist-div");
-  input.append(li, changeList);
-};
+import { addNote, listItemData, resetListItemData } from "./data_manipulation";
 
 // gets user input for values
 const getInput = () => {
@@ -50,7 +8,16 @@ const getInput = () => {
   const dueDate = document.querySelector("#due-date-input");
   const project = document.querySelector("#project-input");
 
-  addNote(title.value, note.value, listItemData, dueDate.value, project.value);
+  if (note !== "" || list !== "") {
+    addNote(
+      title.value,
+      note.value,
+      listItemData,
+      dueDate.value,
+      project.value
+    );
+  }
+
   list.forEach((item) => item.remove());
   title.value = "";
   note.value = "";

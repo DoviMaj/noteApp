@@ -1,4 +1,4 @@
-import { notes } from "./index";
+/* eslint-disable import/no-cycle */
 import { createChecklist } from "./checklist";
 import {
   removeNoteElement,
@@ -6,6 +6,7 @@ import {
   updateElementChecklist,
 } from "./DOM_manipulation";
 import {
+  notes,
   removeNoteData,
   updateData,
   addChecklistItemData,
@@ -87,7 +88,7 @@ export function renderAllNotes() {
       if (evt.key === "Enter" && evt.target.value !== "") {
         addChecklistItemData(evt.target, noteWrapper.id);
         updateElementChecklist(item, index, noteWrapper);
-        evt.target.value = "";
+        addChecklistItem.value = "";
       }
     });
 

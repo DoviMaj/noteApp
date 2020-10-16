@@ -1,7 +1,7 @@
+/* eslint-disable import/no-cycle */
 import { createChecklist } from "./checklist";
-import { listItemData } from "./data_manipulation";
 import { renderAllNotes } from "./render_DOM";
-import { addListItem } from "./form";
+import { updateChecklistArray, listItemData } from "./data_manipulation";
 
 // DOM related functions //
 export const updateElementChecklist = (item, index, noteWrapper) => {
@@ -39,6 +39,42 @@ export const updateElementChecklist = (item, index, noteWrapper) => {
     });
     document.querySelector(`.note${index}`).append(list);
   }
+};
+
+// adds list items on input form
+export const addListItem = (element) => {
+  const li = document.createElement("li");
+  li.innerText = element.value;
+  li.className = "temporary-form-list-item";
+  li.id = listItemData.length;
+  const changeList = document.createElement("input");
+  changeList.className = "hide";
+  changeList.classList.add("change-input");
+  changeList.type = "text";
+  changeList.value = element.value;
+  li.addEventListener("click", () => {
+    li.classList.add("hide");
+    changeList.classList.remove("hide");
+    changeList.focus();
+  });
+  changeList.addEventListener("keydown", (event) => {
+    if (event.key === "Enter" && event.target.value !== "") {
+      updateChecklistArray(event.target, changeList);
+      updateElement(event.target);
+      changeList.classList.add("hide");
+      li.classList.remove("hide");
+    }
+  });
+  changeList.addEventListener("blur", (event) => {
+    if (event.target.value !== "") {
+      updateChecklistArray(event.target, changeList);
+      updateElement(event.target);
+      changeList.classList.add("hide");
+      li.classList.remove("hide");
+    }
+  });
+  const input = document.querySelector("#checklist-div");
+  input.append(li, changeList);
 };
 
 // removeChecklistItemElement

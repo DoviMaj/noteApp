@@ -1,5 +1,8 @@
+// eslint-disable-next-line import/no-cycle
 import { renderAllNotes } from "./render_DOM";
-import { notes } from "./index";
+
+// notes data
+export const notes = [];
 
 // current input list
 export let listItemData = [];
@@ -17,10 +20,8 @@ const Note = (title, description, checklist, dueDate, project) => {
 
 // add note to data
 export const addNote = (title, description, checklist, dueDate, project) => {
-  if (description !== "" || checklist !== "") {
-    notes.unshift(Note(title, description, checklist, dueDate, project));
-    renderAllNotes();
-  }
+  notes.unshift(Note(title, description, checklist, dueDate, project));
+  renderAllNotes();
 };
 
 // remove note data

@@ -1,12 +1,10 @@
 import "./style.css";
+import "../dist/index.html";
 import { imagesEventListeners } from "./background_images";
 import { addInputEvent, addButtonEvent } from "./form";
 import { renderAllNotes } from "./render_DOM";
 import { listInputEvent } from "./DOM_manipulation";
 import { addNote } from "./data_manipulation";
-
-// notes data
-export const notes = [];
 
 addNote(
   "My Shopping List",

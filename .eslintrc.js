@@ -13,5 +13,7 @@ module.exports = {
     "no-unused-vars": 1,
     "import/prefer-default-export": "off",
     "no-use-before-define": 0,
+    "no-param-reassign": "off",
+    "import/no-cycle": "off",
   },
 };
