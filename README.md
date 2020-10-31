@@ -1,6 +1,9 @@
 # Note App
 
-made for TheOdinProject
+Made for TheOdinProject.
+
+Tech:
+VanillaJS
 
 live [here](https://dovimaj.github.io/noteApp/)
 
