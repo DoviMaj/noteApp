@@ -373,17 +373,15 @@ li {
 }
 
 #images-ul {
+  justify-content: center;
+  max-width: 36em;
   display: flex;
-  margin: 0;
-  padding: 0;
   gap: 2px;
   flex-direction: row;
-  margin-top: 21px;
   flex-wrap: wrap;
   background: #e7c6ed;
   padding: 10px;
   border-radius: 10px;
-  width: fit-content;
   flex-shrink: 0;
   margin: 9px auto;
   align-content: normal;
