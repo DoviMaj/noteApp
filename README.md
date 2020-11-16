@@ -2,8 +2,9 @@
 
 Made for TheOdinProject.
 
-Tech:
-VanillaJS
+## Tech:
+- VanillaJS
+- Webpack
 
 live [here](https://dovimaj.github.io/noteApp/)
 
