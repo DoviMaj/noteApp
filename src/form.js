@@ -2,8 +2,8 @@ import { addNote, listItemData, resetListItemData } from "./data_manipulation";
 
 // gets user input for values
 const getInput = () => {
-  const note = document.querySelector("#note-input");
-  const title = document.querySelector("#title-input");
+  const note = document.getElementById("note-input");
+  const title = document.getElementById("title-input");
   const list = document.querySelectorAll(".temporary-form-list-item");
   const dueDate = document.querySelector("#due-date-input");
   const project = document.querySelector("#project-input");
@@ -65,7 +65,7 @@ export const addInputEvent = () => {
 // add button event
 export const addButtonEvent = () => {
   const button = document.querySelector("#add-button");
-  button.addEventListener("click", () => {
+  button.addEventListener("click", (e) => {
     getInput();
     hideInputOptions();
   });

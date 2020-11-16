@@ -6,6 +6,11 @@ import { renderAllNotes } from "./render_DOM";
 import { listInputEvent } from "./DOM_manipulation";
 import { addNote } from "./data_manipulation";
 
+imagesEventListeners();
+listInputEvent();
+addInputEvent();
+addButtonEvent();
+
 addNote(
   "My Shopping List",
   "need to go to that market",
@@ -26,9 +31,3 @@ addNote(
   "12/02/2020",
   "dinner"
 );
-
-imagesEventListeners();
-listInputEvent();
-addInputEvent();
-addButtonEvent();
-renderAllNotes();
