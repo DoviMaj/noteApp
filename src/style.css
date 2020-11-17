@@ -4,7 +4,6 @@
 
 body {
   background: url(./img/img5.jpg) no-repeat fixed;
-  background: url(../dist/914923cf9a48a39d2b139e1080dcd148.jpg) no-repeat fixed;
   background-size: cover;
   font-family: "Montserrat", "sans-serif";
   margin: 0;
@@ -280,11 +279,8 @@ li {
 }
 
 .note-wrapper {
-<<<<<<< HEAD
   max-width: 190px;
-=======
   width: 190px;
->>>>>>> 656be575a9d97880f4ba094ad36f037ae15ad111
   max-height: 650px;
   border-radius: 5px;
   padding-top: 0px;
@@ -373,11 +369,8 @@ li {
 
 #images-ul {
   justify-content: center;
-<<<<<<< HEAD
   max-width: 36em;
-=======
   width: 35em;
->>>>>>> 656be575a9d97880f4ba094ad36f037ae15ad111
   display: flex;
   gap: 2px;
   flex-direction: row;
