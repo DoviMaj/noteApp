@@ -1,8 +1,8 @@
 # Note App
 
-Made for TheOdinProject.
+Made for [TheOdinProject](https://www.theodinproject.com).
 
-## Tech:
+## Practiced:
 - VanillaJS
 - Webpack
 
